@@ -53,9 +53,9 @@ http.get(url3, function (res) {
   res.on('end', function () {
     response[2] = body;
     if (response[0] && response[1] && response[2]) {
-      console.log(count[0]);
-      console.log(count[1]);
-      console.log(count[2]);} else {
+      console.log(response[0]);
+      console.log(response[1]);
+      console.log(response[2]);} else {
         return;
       };
   });
