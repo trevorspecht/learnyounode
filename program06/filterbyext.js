@@ -6,7 +6,7 @@ function filter(pathname, fileext, callback) {
     if (err) return callback (err);
     list.forEach(function(file) {
       if (path.extname(file) === '.' + fileext)
-      callback (null, file);
+        callback (null, file);
     });
   });
 };
