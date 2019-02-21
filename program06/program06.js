@@ -4,5 +4,7 @@ var fileext = process.argv[3];
 
 filter(pathname, fileext, function(err, files) {
   if (err) console.log(err);
-  console.log(files);
+  files.forEach(function (file) {
+    console.log(file);
+  });
 });
